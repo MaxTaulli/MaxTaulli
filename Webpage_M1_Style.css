@@ -34,18 +34,20 @@ body {  /* Changes default page elements*/
 .top-bar{
     /*Setting the text elements*/
     color: #f5f5f1;
+    font-size: clamp(50px,4vw,30px);
 
     margin: -8px -8px 0 -8px;
     display: flex;
     align-items: center;      /* vertical */
     justify-content: center;  /* horizontal, optional */
-    height: 75px;
+    height: 150px;
     background-color: #658973;
 }
 
 .page-bar{
     color: #fffff0;
     margin: 0px -8px 0 -8px;
+    font-size: clamp(20px,4vw,30px);
 
     /*gives the box a round shape
     border: 2px solid black;
@@ -55,7 +57,7 @@ body {  /* Changes default page elements*/
     gap: 2em;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 125px;
     background-color: #242b27f8;
 
 }
@@ -64,6 +66,7 @@ body {  /* Changes default page elements*/
     color: #242b27f8;
     text-decoration: underline;
     text-underline-offset: 8px;
+    font-size: clamp(40px,4vw,20px);
 
     text-align: center;
 }
@@ -74,6 +77,7 @@ body {  /* Changes default page elements*/
     padding: 20px 24px;
     background-color: #F6F9F6;
     line-height: 1.7;
+    font-size: clamp(20px,4vw,10px);
 
     max-width: 700px;      /* box won't get wider than this */
     margin: 8px auto;      /* auto left/right centers the box */
