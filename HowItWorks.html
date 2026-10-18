@@ -1,0 +1,80 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="Webpage_M1_Style.css">
+    </head>
+
+    <h1 class="top-bar">
+        How DNS Works
+    </h1>
+
+   <nav class= "page-bar">
+            <a href="https://maxtaulli.github.io/MaxTaulli/">HOME</a>
+            <a href="https://maxtaulli.github.io/MaxTaulli/History">HISTORY</a>
+            <a href="https://maxtaulli.github.io/MaxTaulli/HowItWorks">HOW IT WORKS</a>
+            <a href="https://maxtaulli.github.io/MaxTaulli/Resources">RESOURCES</a>
+            <a href="https://maxtaulli.github.io/MaxTaulli/KeyConcepts">KEY CONCEPTS</a>
+            <a href="https://maxtaulli.github.io/MaxTaulli/About">ABOUT</a>
+    </nav>
+
+    <h2 class="section-title">
+        What Happens When You Type a URL
+    </h2>
+
+    <p class="text-box">
+        Let's say you're trying to go to the website google.com, you just type it into the search bar and... BOOM you're done, right? 
+        While it may look like that to you, there is so much that happens within those few seconds of loading that your computer does. 
+        Firstly, your browser needs the IP address to connect to the server that is hosting the website. Remember, an IP address is just the numerical address that identifies a device or server on a network. 
+        If you have recently looked up the website, then your system already has the answer stored and will give the IP address to your computer. However, if you don't, then there is a long process that must happen. 
+    </p>
+
+    <h2 class="section-title">
+        Step 1
+    </h2>
+
+    <p class="text-box">
+       First, your computer contacts a Recursive DNS Server, which is your computer’s main DNS server that it contacts when it needs help. 
+       Your computer sends something called a DNS Query where it requests to find information about a domain name. 
+    </p>
+
+    <h2 class="section-title">
+        Step 2
+    </h2>
+
+    <p class="text-box">
+       Next, your Recursive DNS Server will contact a Root DNS Server, which are servers that know where specific domains like .com or .org are managed. 
+       The root server then provides the IP address for the authoritative server that is in charge. 
+       These servers are known as the Top-Level Domain Servers (TLD Servers). . 
+    </p>
+
+    <h2 class="section-title">
+        Step 3
+    </h2>
+
+    <p class="text-box">
+       After that, the TLD Server then provides the IP address for the server in charge of managing your second-level domain (SLD), for example the “google” part in google.com. 
+       This SLD Server is the one that actually has the IP address for the website you’re trying to go to.
+    </p>
+
+    <h2 class="section-title">
+        Step 4
+    </h2>
+
+    <p class="text-box">
+      Finally, the SLD Server gives your computer the IP address to the website, which is then passed to your browser. Only then can you actually get to the website. 
+    </p>
+
+    <h2 class="section-title">
+        Conclusion
+    </h2>
+
+    <p class="text-box">
+      As you can see, the journey to getting to a website is long and a lot more complex than it seems. 
+      Now you know what happens when you type a URL into your browser and the path to obtaining an IP address. 
+    </p>
+
+    <footer class = "bottom-bar">
+        <a href="https://ksuweb.github.io/IT3203/"> KSU IT 3203 Project </a>
+    </footer>
+
+</html>
