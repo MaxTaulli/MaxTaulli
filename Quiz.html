@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- implements CSS into HTML document -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Webpage_M1_Style.css">
+        <title>Quiz</title>
+    </head>
+
+    <body>
+
+        <!--creates green header at the top of page-->
+        <h1 class="top-bar">
+            Quiz
+        </h1>
+
+        <!-- creates dark green bar with page links -->
+        <nav class="page-bar">
+            <a href="https://maxtaulli.github.io/MaxTaulli/">HOME</a>
+            <a href="https://maxtaulli.github.io/MaxTaulli/History">HISTORY</a>
+            <a href="https://maxtaulli.github.io/MaxTaulli/HowItWorks">HOW IT WORKS</a>
+            <a href="https://maxtaulli.github.io/MaxTaulli/Resources">RESOURCES</a>
+            <a href="https://maxtaulli.github.io/MaxTaulli/KeyConcepts">KEY CONCEPTS</a>
+            <a href="https://maxtaulli.github.io/MaxTaulli/About">ABOUT</a>
+            <a href="https://maxtaulli.github.io/MaxTaulli/Quiz">QUIZ</a>
+        </nav>
+
+        <main>
+            <section class="text-box">
+                <h2>DNS Self-Assessment</h2>
+                <p>Answer all 10 questions. You have 10 minutes to finish.</p>
+
+                <p id="timer">Time Remaining: 10:00</p>
+
+                <form id="quiz-form">
+
+                    <fieldset>
+
+                        <legend>1. What does DNS stand for?</legend>
+                        <label><input type="radio" name="q1" value="a"> Domain Name System</label><br>
+                        <label><input type="radio" name="q1" value="b"> Digital Network Service</label><br>
+                        <label><input type="radio" name="q1" value="c"> Data Name Server</label>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>2. What does DNS translate domain names into? (Select one)</legend>
+                        <label><input type="radio" name="q2" value="a"> MAC addresses</label><br>
+                        <label><input type="radio" name="q2" value="b"> IP addresses</label><br>
+                        <label><input type="radio" name="q2" value="c"> Usernames</label>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>3. Which of these are DNS record types? (Select all that apply)</legend>
+                        <label><input type="checkbox" name="q3" value="a"> A record</label><br>
+                        <label><input type="checkbox" name="q3" value="b"> MX record</label><br>
+                        <label><input type="checkbox" name="q3" value="c"> HDMI record</label><br>
+                        <label><input type="checkbox" name="q3" value="d"> CNAME record</label>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>4. Fill in the blank: The DNS system is organized into a hierarchy of ______.</legend>
+                        <input type="text" name="q4" placeholder="Your answer">
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>5. What is the purpose of a DNS resolver?</legend>
+                        <label><input type="radio" name="q5" value="a"> To help find the IP address for a domain name</label><br>
+                        <label><input type="radio" name="q5" value="b"> To create websites</label><br>
+                        <label><input type="radio" name="q5" value="c"> To store computer files</label>
+
+                    </fieldset>
+
+                    <fieldset>
+                        
+                        <legend>6. Fill in the blank: The top level of the DNS hierarchy is the ______ server.</legend>
+                        <input type="text" name="q6" placeholder="Your answer">
+                        
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>7. Which DNS record is commonly used to point a domain name to an IPv4 address?</legend>
+                        <label><input type="radio" name="q7" value="a"> MX</label><br>
+                        <label><input type="radio" name="q7" value="b"> A</label><br>
+                        <label><input type="radio" name="q7" value="c"> TXT</label>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>8. What is DNS caching used for?</legend>
+                        <label><input type="radio" name="q8" value="a"> To make repeated lookups faster</label><br>
+                        <label><input type="radio" name="q8" value="b"> To delete domain names</label><br>
+                        <label><input type="radio" name="q8" value="c"> To block all internet traffic</label>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>9. Which organization coordinates the global DNS root system?</legend>
+                        <label><input type="radio" name="q9" value="a"> ICANN</label><br>
+                        <label><input type="radio" name="q9" value="b"> NASA</label><br>
+                        <label><input type="radio" name="q9" value="c"> HDMI</label>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>10. What is the purpose of a DNS root server?</legend>
+                        <label><input type="radio" name="q10" value="a"> To direct queries toward the appropriate top-level domain servers</label><br>
+                        <label><input type="radio" name="q10" value="b"> To host every website on the internet</label><br>
+                        <label><input type="radio" name="q10" value="c"> To assign passwords to users</label>
+
+                    </fieldset>
+
+                    <button type="button" id="submit-quiz">Submit Quiz</button>
+
+                    <button type="reset" id="reset-quiz">Reset Quiz</button>
+
+                </form>
+
+                <section id="results" aria-live="polite">
+
+                </section>
+
+            </section>
+
+        </main>
+
+        <script src="quiz.js"></script>
+
+
+        <!-- creates grey footer at the bottom of the page-->
+        <footer class = "bottom-bar">
+            <a href="https://ksuweb.github.io/IT3203/"> KSU IT 3203 Project </a>
+        </footer>
+
+    </body>
+
+</html>
